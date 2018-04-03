@@ -1,0 +1,45 @@
+ONE TIME PAD CRACKER
+
+Quick reference:
+
+Text editing in this program supports basic emacs-like hotkeys.
+Practically, you can paste in text and press C-g when you are done.
+q-quit
+c-input a cipher text 
+k-input a (partial) key
+b-input a crib to test
+
+When a crib is active:
+f-move the crib left in the plaintext
+g-move the crib right in the plaintext
+1-test the crib against the previous cipher
+2-test the crib against the next cipher
+a-edit the partial key to reflect the crib in its current position
+
+The idea behind a one-time pad is that it is used one time.
+If this principle is violated, that introduces major vulnerabilities.
+These vulnerabilities can be exploited using a tool such as this one.
+The idea behind this is that you can drag a crib through both cipher 
+texts, and if at any position it produces English in the other cipher
+text, you will have then found the correct key for those letters in each.
+
+Full hotkeys for text entry:
+
+Control-A 	Go to left edge of window.
+Control-B 	Cursor left, wrapping to previous line if appropriate.
+Control-D 	Delete character under cursor.
+Control-E 	Go to right edge (stripspaces off) or end of line (stripspaces on).
+Control-F 	Cursor right, wrapping to next line when appropriate.
+Control-G 	Terminate, returning the window contents.
+Control-H 	Delete character backward.
+Control-J 	Terminate if the window is 1 line, otherwise insert newline.
+Control-K 	If line is blank, delete it, otherwise clear to end of line.
+Control-L 	Refresh screen.
+Control-N 	Cursor down; move down one line.
+Control-O 	Insert a blank line at cursor location.
+Control-P 	Cursor up; move up one line.
+
+Version 0.99, Copyright 2018, Michael Bayless.
+Licensed under the GNU GPL 3.0, which can be found at:
+https://www.gnu.org/licenses/gpl-3.0.en.html
+Which you can get to, since you got this software from the internet.
